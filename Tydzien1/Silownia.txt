@@ -1,0 +1,17 @@
+Klient(id_klienta, imie, nazwisko, nr_telefonu, 
+id_karty (FK Karnety), data_doloczenia, data_urodzenia)
+
+Karnety(id_karty, status_czlonkoski, termin, 
+id_pakiet(FK Pakiety))
+
+Pakiety(id_pakiet, cena, dozwolone_wejscia, 
+data_wprowadzenia, data_wygasniecia)
+
+Sprzedasz(id_sprzedarzy, id_karty (FK Karnety), 
+id_pakiet(FK Pakiety), data_sprzedarzy) 
+
+Historia_karnetow(id_klienta, id_karty, id_pakiet, 
+data_zakupu, data_zamiany) 
+
+Wejscia(id_wejscia, id_klienta, data_wejscia, 
+czas_wejscia, czas_wyjscia)
